@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Usability and Security; Better Together</title>
+    <meta name="description" content="An exploration of the relationship between security and usability, and how to build a culture of trust.">
+
+    <link rel="stylesheet" href="/Tooling and grading/built/screenfd37.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="canonical" href="index.html">
+    <link rel="amphtml" href="amp/index.html">
+    <link rel="icon" href="../content/images/2021/03/maura-favicon-1.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script>
+        // This script checks if your computer is in dark mode or light mode
+        // and sets the website's theme to match.
+        var existingTheme = localStorage.getItem('dawn_theme');
+        if (!existingTheme) {
+            if (navigator.platform.indexOf('Win') > -1) {
+                existingTheme = "light";
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                existingTheme = "dark";
+            } else {
+                existingTheme = "light";
+            }
+        }
+        if (existingTheme === "dark") {
+            document.documentElement.classList.add('dark-mode');
+        } else {
+            document.documentElement.classList.remove('dark-mode');
+        }
+    </script>
+</head>
+
+<body class="post-template tag-implicationsofmostimportantcentury">
+
+    <div class="site">
+
+        <header class="site-header container">
+            <div class="header-left">
+                <a class="logo" href="../index.html">
+                    <span class="logo-text">Cold Takes</span>
+                </a>
+            </div>
+        </header>
+
+        <div class="site-content">
+            <div class="content-area">
+                <main class="site-main">
+
+                    <article class="single post tag-implicationsofmostimportantcentury no-image">
+                        
+                        <header class="single-header kg-canvas">
+                            <div class="single-meta">
+                                <span class="single-meta-item">
+                                    By <a href="https://saviofernandes1098.github.io/design/index.html" title="Author Name" style="text-decoration: underline; color: var(--brand-color);">Savio Fernandes</a>
+                                </span>
+                                <span class="single-meta-item single-meta-date">
+                                    <time datetime="2024-02-10">10 February 2024</time>
+                                </span>
+                                <span class="single-meta-item single-meta-length">
+                                    4 min read
+                                </span>
+                            </div>
+                            
+                            <h1 class="single-title">Usability and Security; Better Together</h1>
+                        </header>
+
+                       
+                        <div class="single-content kg-canvas u-text-format">
+                            
+                            <p>Security is often synonymous with poor usability. We assume that in order for something to be secure, it needs to by default appear impenetrable to disincentivize potential bad actors. While this premise is true in many instances like in the security of a bank, it relies on a fundamental assumption: that there is no room for choice.</p>
+                            <p>With the option to choose, a user almost inevitably picks a more usable system or adapts how they interact with it regardless of how insecure it may be. In the context of the web, passwords are a prime example of such behavior. Though passwords were implemented as a way to drastically reduce the risk of attack, they proved to be marginally effective. In the name of convenience, complex, more secure passwords were shirked in favor of easy to remember ones, and passwords were liberally reused across accounts.</p>
+                            <p>This example clearly illustrates that usability and security are not mutually exclusive. Rather, security depends on usability, and it is imperative to get user buy-in in order to properly secure our applications.</p>
+
+                            <h2>Security and Usability; a tale of broken trust</h2>
+                            <p>At its core, security is about fostering trust. In addition to protecting user accounts from malicious attacks, security protocols provide users with the peace of mind that their accounts and personal information is safe. Ironically, that peace of mind is incumbent on users using the security protocols in the first place, which further relies on them accepting that security is needed.</p>
+                            <p>With the increased frequency of cyber security threats and data breaches over the last couple of years, users have grown to be less trusting of security experts and their measures. Security experts have equally become less trusting of users, and see them as the “the weakest link in the chain”. This has led to more cumbersome security practices such as mandatory 2FA and constant re-login flows which bottlenecks users from accomplishing essential tasks. Because of this break down in trust, there is a natural inclination to shortcut security altogether.</p>
+
+                            <h2>Build a culture of trust not fear</h2>
+                            <p>Building trust among users requires empowering them to believe that their individual actions have a larger impact on the security of the overall organization. If a user understands that their behavior can put critical resources of an organization at risk, they will more likely behave with security in mind.</p>
+                            <p>For this to work, nuance is key. Deeming that every resource needs a similarly high number of checks and balances diminishes how users perceive security and adds unnecessary bottlenecks to user workflows. In order to lay the foundation for good security, it’s worth noting that risk analysis is the bedrock of security design. Instead of blindly implementing standard security measures recommended by the experts, a better approach is to tailor security protocols to meet specific use cases and adapt as much as possible to user workflows.</p>
+                            <p>Here are some examples of how to do just that:</p>
+
+                            <h3>Risk based authentication</h3>
+                            <p>Risk based authentication is a powerful way to perform a holistic assessment of the threats facing an organization. Risks occur at the intersection of vulnerability and threat. A high risk account is vulnerable and faces the very real threat of a potential breach.</p>
+                            <p>Generally, risk based authentication is about calculating a risk score associated with accounts and determining the proper approach to securing it. It takes into account a combination of:</p>
+                            <ul>
+                                <li>The likelihood that that risk will materialize.</li>
+                                <li>The impact on the organization should the risk come to pass.</li>
+                            </ul>
+                            <p>With this system, an organization can easily adapt access to resources depending on how critical they are to the business; for instance, internal documentation may not warrant 2FA, while accessing business and financial records may.</p>
+
+                            <h3>Dynamically adaptive auth</h3>
+                            <p>Similar to risk based auth, dynamically adaptive auth adjusts to the current situation. Security can be strengthened and slackened as warranted, depending on how risky the access point is.</p>
+                            <ul>
+                                <li>A user accessing an account from a trusted device in a known location may be deemed low risk and therefore not in need of extra security layers.</li>
+                                <li>Likewise, a user exhibiting predictive patterns of use should be granted quick and easy access to resources.</li>
+                            </ul>
+                            <p>The ability to adapt authentication based on the most recent security profile of a user significantly improves the experience by reducing unnecessary friction.</p>
+                            
+                            <h2>Conclusion</h2>
+                            <p>Historically, security failed to take the user experience into account, putting the onus of securing accounts solely on users. Considering the fate of password security, we can neither rely on users nor stringent security mechanisms to keep our accounts safe. Instead, we should aim for security measures that give users the freedom to bypass them as needed while still protecting our accounts from attack. The fate of secure systems lies in the understanding that security is a process that must constantly adapt to face the shifting landscape of user behavior and potential threats.</p>
+
+                            </div>
+                    </article>
+                    <section class="related-wrapper">
+                        <div class="container medium">
+                            <h3 class="related-title">You might also like...</h3>
+                            <div class="related-feed">
+                                
+                                <article class="feed post no-image">
+                                    <div class="feed-calendar">
+                                        <div class="feed-calendar-month">Feb</div>
+                                        <div class="feed-calendar-day">24</div>
+                                    </div>
+                                    <h2 class="feed-title">How major governments can help with the most important century</h2>
+                                    <div class="feed-right">
+                                        <span style="margin: 2px !important; padding: 2px !important;">
+                                            <svg class="icon feed-visibility feed-visibility-false"><use xlink:href="#star"></use></svg>
+                                        </span>
+                                        <div class="feed-length">6 min read</div>
+                                    </div>
+                                    <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
+                                    <a class="u-permalink" href="../how-governments-can-help-with-the-most-important-century/index.html" aria-label="How major governments can help with the most important century"></a>
+                                </article>
+                                
+                                <article class="feed post featured no-image">
+                                    <div class="feed-calendar">
+                                        <div class="feed-calendar-month">Feb</div>
+                                        <div class="feed-calendar-day">10</div>
+                                    </div>
+                                    <h2 class="feed-title">Jobs that can help with the most important century</h2>
+                                    <div class="feed-right">
+                                        <span style="margin: 2px !important; padding: 2px !important;">
+                                            <svg class="icon feed-visibility feed-visibility-true"><use xlink:href="#star"></use></svg>
+                                        </span>
+                                        <div class="feed-length">36 min read</div>
+                                    </div>
+                                    <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
+                                    <a class="u-permalink" href="../jobs-that-can-help-with-the-most-important-century/index.html" aria-label="Jobs that can help with the most important century"></a>
+                                </article>
+                                
+                                </div>
+                        </div>
+                    </section>
+                    </main>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
