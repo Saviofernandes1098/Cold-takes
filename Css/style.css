@@ -1108,4 +1108,15 @@ body.dark {
 .submit-button:hover {
     background-color: #eab308; /* Darker yellow on hover */
 }
+
+.contact-link {
+  color: #000000; /* Sets the initial text color */
+  text-decoration: none; /* Removes the underline */
+  transition: color 0.2s ease; /*Adds a smooth color change effect */
+}
+
+.contact-link:hover {
+  color: #C0C0C0; /* Sets the text color to light blue on hover */
+}
+
 /* ========================================= */
