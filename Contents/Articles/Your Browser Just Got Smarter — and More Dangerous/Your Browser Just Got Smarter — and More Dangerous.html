@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Your Browser Just Got Smarter — and More Dangerous</title>
+    <meta name="description" content="An exploration of how design choices in typography, color, and imagery can create gender bias.">
+
+    <link rel="stylesheet" href="/Cold-takes/Contents/Articles/built/screenfd37.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="canonical" href="index.html">
+    <link rel="amphtml" href="amp/index.html">
+    <link rel="icon" href="../content/images/2021/03/maura-favicon-1.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <script>
+        // This script checks if your computer is in dark mode or light mode
+        // and sets the website's theme to match.
+        var existingTheme = localStorage.getItem('dawn_theme');
+        if (!existingTheme) {
+            if (navigator.platform.indexOf('Win') > -1) {
+                existingTheme = "light";
+            } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                existingTheme = "dark";
+            } else {
+                existingTheme = "light";
+            }
+        }
+        if (existingTheme === "dark") {
+            document.documentElement.classList.add('dark-mode');
+        } else {
+            document.documentElement.classList.remove('dark-mode');
+        }
+    </script>
+</head>
+
+<body class="post-template tag-implicationsofmostimportantcentury">
+
+    <div class="site">
+
+        <header class="site-header container">
+            <div class="header-left">
+                <a class="logo" href="/Cold-takes/index.html">
+                    <span class="logo-text">Cold Takes</span>
+                </a>
+            </div>
+        </header>
+
+        <div class="site-content">
+            <div class="content-area">
+                <main class="site-main">
+
+                    <article class="single post tag-implicationsofmostimportantcentury no-image">
+                        
+                        <header class="single-header kg-canvas">
+                            <div class="single-meta">
+                                <span class="single-meta-item">
+                                    By <a href="https://saviofernandes1098.github.io/design/index.html" title="Savio Fernandes" style="text-decoration: underline; color: var(--brand-color);">Savio Fernandes</a>
+                                </span>
+                                <span class="single-meta-item single-meta-date">
+                                    <time datetime="2025-03-03">March 23, 2025</time>
+                                </span>
+                                <span class="single-meta-item single-meta-length">
+                                    4 min read
+                                </span>
+                            </div>
+                            
+                            <h1 class="single-title">Your Browser Just Got Smarter — and More Dangerous</h1>
+                        </header>
+
+                        <div class="single-content kg-canvas u-text-format">
+                            
+<p>OpenAI recently released a new “browser” powered by artificial intelligence (AI).</p>
+                            <p>Simon Willison, a well-known developer, wrote a detailed post explaining how OpenAI is trying to keep this new tool secure. He reviewed the company’s security statement point by point. If you’re interested in the deep technical details, his post is worth reading.</p>
+                            <p>Here’s the main takeaway in simpler terms: OpenAI seems to be taking reasonable steps to handle the security risks that come with combining a browser (which lets you explore the web) and a large language model (LLM, like ChatGPT). But even OpenAI’s Chief Information Security Officer admits that one big problem — called “prompt injection” — still doesn’t have a real solution.</p>
+                            <p>In other words, while OpenAI is trying to make this safe, we’re still in experimental territory. Using an AI browser today means taking part in a global test on how secure this new kind of tool can be. So it might be wise to wait before assuming all their safety measures are foolproof.</p>
+                            <p>(Side note: Putting people on the “frontier” of security for everyday browsing seems risky, doesn’t it? Developer Tom MacWright has even argued that putting an AI chatbot between people and the internet is bound to cause serious problems eventually.)</p>
+                            
+                            <h2>Where Two Risky Worlds Meet: AI Browsers and Software Supply Chains</h2>
+                            <p>After reading Simon’s article, what really stands out is how two hot topics — AI browsers and npm supply chain attacks — could potentially mix in dangerous ways. To explain:</p>
+                            <ul>
+                                <li><strong>npm</strong> is a system developers use to share and reuse small pieces of software (called “packages”).</li>
+                                <li><strong>Supply chain attacks</strong> happen when hackers sneak something malicious into these shared packages, which then spread to many people or companies who use them.</li>
+                            </ul>
+                            <p>Now imagine combining that with AI browsers, which can read and act on natural language (plain English text). That combination could open up new ways for attackers to exploit systems.</p>
+                            
+                            <h2>A Simple Example of How This Could Happen</h2>
+                            <p>Let’s say you’re a hacker. You upload a seemingly harmless software package that includes some normal English text — not computer code, just instructions written in plain language. No malicious code runs when people install your package. Everything looks clean.</p>
+                            <p>Later, this package gets bundled (combined) with other software and eventually delivered to end users — ordinary people using AI browsers. Then something unexpected happens: The AI part of the browser reads those “plain English” instructions and follows them — doing something harmful that you, the attacker, secretly intended.</p>
+                            
+                            <p>Notice what happened here:</p>
+                            <ul>
+                                <li>No malicious computer code ever ran.</li>
+                                <li>The browser itself wasn’t hacked.</li>
+                                <li>The attack happened because the AI understood and <strong>acted on</strong> human language that looked innocent but was actually designed to manipulate it.</li>
+                            </ul>
+                            
+                            <p>So in this new world, even plain text can be used as a weapon. The space for possible attacks just got much, much bigger.</p>
+                            <p>I’m not a security expert, but reading about this makes me think more and more about how critical cybersecurity has become. It feels like the one area of technology that keeps getting more complicated — and more dangerous — every year.</p>
+
+                            </div>
+                    </article>
+                    <section class="related-wrapper">
+                        <div class="container medium">
+                            <h3 class="related-title">You might also like...</h3>
+                            <div class="related-feed">
+                                
+                                <article class="feed post no-image">
+                                    <div class="feed-calendar">
+                                        <div class="feed-calendar-month">Sept</div>
+                                        <div class="feed-calendar-day">07</div>
+                                    </div>
+                                    <h2 class="feed-title">The trust quotient (TQ)</h2>
+                                    <div class="feed-right">
+                                        <span style="margin: 2px !important; padding: 2px !important;">
+                                            <svg class="icon feed-visibility feed-visibility-false"><use xlink:href="#star"></use></svg>
+                                        </span>
+                                        <div class="feed-length">8 min read</div>
+                                    </div>
+                                    <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
+                                    <a class="u-permalink" href="https://saviofernandes1098.github.io/Cold-takes/Contents/Articles/The%20Trust%20Quotient%20(TQ)/The%20trust%20Quotient.html" aria-label="How major governments can help with the most important century"></a>
+                                </article>
+                                
+                                <article class="feed post featured no-image">
+                                    <div class="feed-calendar">
+                                        <div class="feed-calendar-month">Aug</div>
+                                        <div class="feed-calendar-day">13</div>
+                                    </div>
+                                    <h2 class="feed-title">Choosing Tools To Make Websites</h2>
+                                    <div class="feed-right">
+                                        <span style="margin: 2px !important; padding: 2px !important;">
+                                            <svg class="icon feed-visibility feed-visibility-true"><use xlink:href="#star"></use></svg>
+                                        </span>
+                                        <div class="feed-length">4 min read</div>
+                                    </div>
+                                    <svg class="icon feed-icon"><use xlink:href="#chevron-right"></use></svg>
+                                    <a class="u-permalink" href="https://saviofernandes1098.github.io/Cold-takes/Contents/Articles/Choosing%20tools%20to%20make%20websites/Choosing_tools_to_make_websites.html" aria-label="Jobs that can help with the most important century"></a>
+                                </article>
+                                
+                                </div>
+                        </div>
+                    </section>
+                    </main>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
